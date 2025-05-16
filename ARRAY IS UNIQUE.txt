@@ -1,0 +1,24 @@
+public class Main
+{
+	public static void main(String[] args){
+	    int[] arr = {2,5,7,6,6,8};
+	    int target = 6;
+	    if(isUnique(arr,target)){
+	        System.out.println("The array does not contains unique target element");
+	    }
+	    else{
+	        System.out.println("The array comtains unique target element");
+	    }
+	}
+	static boolean isUnique(int[] arr,int target){
+	    int count = 0;
+	    for(int i = 0;i<arr.length;i++){
+	        if(arr[i]==target){
+	            count++;
+	        }
+	    }
+	    if(count>1)
+	      return false;
+	      return true;
+	}
+}
