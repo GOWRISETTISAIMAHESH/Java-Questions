@@ -1,0 +1,20 @@
+// a program to find the average of marks and percentage of total marks
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int total = sc.nextInt();
+	    int count = sc.nextInt();
+		System.out.println(average(total,count));
+		System.out.println(average(total,count));
+	}
+	static float average(int total, int count){
+	    float ans = total/count;
+	    return ans;
+	}
+	static float percentage(int total,int count){
+	    float perc = (total/count*100)*100;
+	    return perc;
+	}
+}
