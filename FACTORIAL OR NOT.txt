@@ -1,0 +1,21 @@
+// a program to find the function given number is factorial or not
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+		System.out.println(isFactorial(num));
+	}
+	static boolean isFactorial(int n){
+	    int fact = 1;
+	    int i = 1;
+	    while(fact<n){
+	        i = i+1;
+	        fact = fact*i;
+	    }
+	    if(fact==n)
+	    return true;
+	    return false;
+	}
+}
